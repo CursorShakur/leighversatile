@@ -5,7 +5,6 @@
         <v-col cols="12" md="10" lg="8">
           <v-card class="cta-card">
             <v-parallax
-              src="@/assets/cta-background.jpg"
               height="400"
             >
               <div class="d-flex flex-column fill-height justify-center align-center text-center px-4">
