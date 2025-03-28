@@ -44,8 +44,12 @@ import { ref } from 'vue'
 const drawer = ref(false)
 const menuItems = [
   { title: 'Home', icon: 'mdi-home', to: '/' },
-  { title: 'About', icon: 'mdi-information', to: '/about' },
-  { title: 'Contact', icon: 'mdi-email', to: '/contact' }
+  { title: 'Problems', icon: 'mdi-alert-circle-outline', to: '#problems' },
+  { title: 'Solution', icon: 'mdi-lightbulb-on-outline', to: '#solutions' },
+  { title: 'Process', icon: 'mdi-timeline-outline', to: '#process' },
+  { title: 'Services', icon: 'mdi-cog-outline', to: '#services' },
+  { title: 'Why Us', icon: 'mdi-thumb-up-outline', to: '#why-us' },
+  { title: 'Contact', icon: 'mdi-email-outline', to: '#cta' }
 ]
 
 const toggleDrawer = () => {

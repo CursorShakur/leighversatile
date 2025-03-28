@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section id="hero" class="hero-section">
     <v-container>
       <v-row align="center" justify="center" class="py-16">
         <v-col cols="12" md="7" class="text-center text-md-left">

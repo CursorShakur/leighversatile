@@ -21,8 +21,9 @@
 <script setup lang="ts">
 const links = [
   { text: 'Home', to: '/' },
-  { text: 'About', to: '/about' },
-  { text: 'Contact', to: '/contact' },
+  { text: 'Why Us', to: '#why-us' },
+  { text: 'Services', to: '#services' },
+  { text: 'Contact', to: '#cta' },
   { text: 'Terms', to: '/terms' },
   { text: 'Privacy', to: '/privacy' }
 ]
