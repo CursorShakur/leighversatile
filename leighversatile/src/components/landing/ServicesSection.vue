@@ -100,6 +100,9 @@ const services = [
 .services-section {
   background-color: var(--v-surface-lighten1);
   position: relative;
+  background-image: url('@/assets/Professional Partnership Success_simple_compose.png');
+  background-size: cover;
+  background-position: center center;
 }
 
 .services-section::before {
@@ -109,7 +112,8 @@ const services = [
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(var(--v-theme-primary), 0.05), transparent);
+  background: linear-gradient(135deg, rgba(var(--v-theme-primary-rgb), 0.1), transparent),
+              linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
   z-index: 0;
 }
 

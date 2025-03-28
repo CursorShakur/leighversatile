@@ -10,7 +10,8 @@
       <v-row>
         <v-col cols="12" md="6">
           <v-img
-            src="@/assets/why-us.jpg"
+            src="@/assets/Dynamic Team Collaboration_simple_compose.png"
+            alt="Dynamic team collaborating on a project"
             height="400"
             cover
             class="rounded-lg"

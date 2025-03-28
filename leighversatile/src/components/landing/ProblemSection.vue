@@ -1,9 +1,9 @@
 <template>
-  <section id="problems" class="problem-section py-16">
+  <section id="problems" class="problem-section py-16" :style="sectionStyle">
     <v-container>
       <v-row justify="center">
         <v-col cols="12" class="text-center mb-12">
-          <h2 class="text-h3 font-weight-bold mb-4">Technical Bottlenecks Are Holding Your Team Back</h2>
+          <h2 class="text-h3 font-weight-bold mb-4 text--primary">Technical Bottlenecks Are Holding Your Team Back</h2>
         </v-col>
       </v-row>
       <v-row>
@@ -38,6 +38,15 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import problemBgImage from '@/assets/Modern Corporate Elegance_simple_compose.png'
+
+const sectionStyle = computed(() => ({
+  backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(${problemBgImage})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center',
+}))
+
 const problems = [
   {
     description: 'Hiring technical talent or getting custom software is expensive and time-consuming',
@@ -69,6 +78,7 @@ const problems = [
 
 <style scoped>
 .problem-section {
+  position: relative; /* Needed for potential future overlays */
   background-color: var(--v-background-lighten2);
 }
 

@@ -35,8 +35,8 @@
         </v-col>
         <v-col cols="12" md="5" class="text-center d-none d-md-block">
           <v-img
-            src="@/assets/hero-image.svg"
-            alt="AI-Powered Development"
+            src="@/assets/Empowered by AI_simple_compose.png"
+            alt="AI empowering business experts"
             class="mx-auto"
             max-width="500"
           />

@@ -75,6 +75,9 @@ const steps = [
 .solution-section {
   background-color: var(--v-surface-base);
   position: relative;
+  background-image: url('@/assets/Human-AI Neural Network_simple_compose.png');
+  background-size: cover;
+  background-position: center center;
 }
 
 .solution-section::before {
@@ -84,7 +87,9 @@ const steps = [
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(var(--v-theme-primary), 0.05), rgba(var(--v-theme-secondary), 0.05));
+  /* Apply a semi-transparent gradient over the background image */
+  background: linear-gradient(45deg, rgba(var(--v-theme-primary-rgb), 0.1), rgba(var(--v-theme-secondary-rgb), 0.1)),
+              linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
   z-index: 0;
 }
 

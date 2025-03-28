@@ -1,5 +1,5 @@
 <template>
-  <section id="process" class="process-section py-16">
+  <section id="process" class="process-section py-16" :style="sectionStyle">
     <v-container>
       <v-row justify="center">
         <v-col cols="12" class="text-center mb-12">
@@ -34,6 +34,15 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import processBgImage from '@/assets/Digital Network Flow_simple_compose.png'
+
+const sectionStyle = computed(() => ({
+  backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(${processBgImage})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center',
+}))
+
 const processSteps = [
   {
     title: 'Discovery',
@@ -65,7 +74,7 @@ const processSteps = [
 
 <style scoped>
 .process-section {
-  background-color: var(--v-background-base);
+  position: relative;
 }
 
 .v-timeline-item {
